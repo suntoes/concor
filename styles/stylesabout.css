@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 54px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+body {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #f1f0ef;
+}
+
+#header img {
+    width: 270px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #202020;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+#navbar li i {
+    color: #202020;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #64a474;
+}
+
+#navbar li .fa-bag-shopping:hover {
+    color: #64a474;
+}
+
+#navbar li:hover a::before {
+    opacity: 1;
+}
+
+#navbar li:hover .js-arrow {
+    transform: rotate(180deg);
+}
+
+#navbar li .js-arrow {
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #202020;
+    transition: all 0.3s ease;
+}
+
+#navbar li .fa-chevron-down {
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #202020;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+#navbar li .sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background: #f1f0ef;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+}
+
+#navbar li:hover .sub-menu {
+    display: block;
+}
+
+#navbar li .sub-menu li {
+    padding: 0 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#navbar li .sub-menu a {
+    color: #202020;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#navbar li .sub-menu a:hover {
+    color: #64a474;
+}
+
+#navbar .search-icon {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    border-radius: 5px;
+}
+
+#navbar .search-icon input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+#navbar .search-icon button {
+    border: none;
+    background-color: #656565;
+    border-radius: 0 5px 5px 0;
+}
+
+#navbar .search-icon button:hover {
+    background-color: #313a5a7c;
+    cursor: pointer;
+}
+
+#navbar .search-icon button i {
+    color: #f1f0ef;
+    font-size: 20px;
+    width: 40px;
+}
+
+#aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#aboutus h1 {
+    font-size: 50px;
+    color: #202020;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#aboutus h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #313a5a;
+}
+
+#aboutus p {
+    font-size: 18px;
+    color: #202020;
+    margin-bottom: 10px;
+}
+
+#container {
+    margin: 0 100px;
+    padding: 20px 0px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abtimg {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.abtimg img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.abtimg img:hover {
+    transform: scale(1.1);
+}
+
+.abtinfo {
+    flex: 1;
+}
+
+.abtinfo p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #202020;
+    text-align: justify;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    background: #f1f0ef;
+}
+
+footer .content .about {
+    display: flex;
+}
+
+footer .content .about p {
+    margin-left: 10px;
+}
+
+footer .content img {
+    width: 100px;
+    height: 100px;
+}
+
+footer .main-content {
+    display: flex;
+}
+
+footer .main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+footer .box h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+footer .box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+footer .box .content:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #656565;
+}
+
+footer .left .content p {
+    text-align: justify;
+    line-height: 20px;
+}
+
+footer .left .content .social {
+    margin: 20px 0 0 0;
+}
+
+footer .left .content .social a {
+    padding: 0 2px;
+    text-decoration: none;
+    color: #202020;
+    font-size: 25px;
+}
+
+footer .left .content .social a i {
+    height: 40px;
+    width: 40px;
+    background: #64a4743d;
+    line-height: 40px;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+footer .left .content .social a i:hover {
+    background: #64a474;
+}
+
+footer .center .content i {
+    font-size: 20px;
+    background: #64a4743d;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .center .content .fas:hover {
+    background: #64a474;
+}
+
+footer .center .content .text {
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+footer .center .content .phone {
+    margin: 15px 0;
+}
+
+footer .right form {
+    display: flex;
+    align-items: center;
+}
+
+footer .right .text1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #202020;
+}
+
+footer .right .text2 {
+    font-size: 15px;
+    margin-bottom: 2px;
+    color: #202020;
+}
+
+footer .right form input {
+    width: 300px;
+    border: 1px solid #222222;
+    outline: #202020;
+    line-height: 20px;
+    font-size: 15px;
+    color: #202020;
+    padding: 10px 10px;
+    border: 1px solid #202020;
+    border-radius: 10px;
+    height: 35px;
+}
+
+footer .right form .btn {
+    margin-left: 10px;
+    width: 100px;
+}
+
+footer .right form .btn button {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 10px;
+    background-color: #c54846;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+footer .right form .btn button:hover {
+    background: #642423;
+}
+
+footer .bottom center {
+    padding: 5px;
+    background: #f1f0ef;
+}
+
+footer .bottom center span {
+    color: #202020;
+}
